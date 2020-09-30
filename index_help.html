@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MyGo房地產網絡 - 會員中心 - 求租求購</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+      google: {
+        "families": ["Open+Sans:300,400,600,700"]
+      },
+      custom: {
+        "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"],
+        urls: ['assets/css/fonts.css']
+      },
+      active: function() {
+        sessionStorage.fonts = true;
+      }
+    });
+  </script>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/util.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/cllapse.css" type="text/css">
+    <!-- Roger 新加 -->
+    <link rel="stylesheet" href="assets/css/datepicker.css" type="text/css">
+    <!-- Roger 新加 -->
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+    <!--mygo3.0樣式-->
+    <link type="text/css" href="assets/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MyGo navbar Header 01-->
+    <nav class="navbar sticky-top sticky-offse navbar-expand-lg navbar-dark bg-mygo fixed-top1 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand py-1" href="index.html">
+                <img src="assets/img/logo_header.svg" class="img-fluid" alt="...">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mywrapper" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto text-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">買房</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">賣房</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">租房</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">海外地產</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">金融</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">免費謄本</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">商學苑</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">社區實價</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">交易存證</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">新聞</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-sub text-nowrap ml-auto">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            我要刊登
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animated fadeIn " aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item" href="#">刊登出租</a>
+                            <a class="dropdown-item" href="#">刊登出售</a>
+                            <a class="dropdown-item" href="#">刊登建案</a>
+                            <a class="dropdown-item" href="#">圖片廣告</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            幫助
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animated fadeIn" aria-labelledby="navbarDropdownPortfolio">
+                            <a class="dropdown-item" href="#">諮詢入口</a>
+                            <a class="dropdown-item" href="#">新手指南</a>
+                            <a class="dropdown-item" href="#">房東幫助</a>
+                            <a class="dropdown-item" href="#">經紀人幫助</a>
+                            <a class="dropdown-item" href="#">建築/代銷公司幫助</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- container start from here -->
+   
+
+    <div class="container-fluid container-fluid-mygo30">
+        <div class="search_help">
+            <div class="row search-box">
+                <div class="col-12 col-lg-2 col-xl-2">
+                    <ul>
+                        <li><a href="index_sale.html">賣房<span>賣地</span></a></li>
+                        <li><a href="index_buy.html">買房<span>買地</span></a></li>
+                        <li><a href="index_find.html">找房<span>找地</span></a></li>
+                        <li class="action"><a href="index_help.html">救房<span>救地</span></a></li>
+                        <li><a href="#">小薇</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-10 col-xl-10 search-box-row">
+                    <div>
+                        <p class="slogan_xl">MyGo房地救助站聆聽您的心聲</p>
+                    </div>
+                    <div class="row search-bar">
+                        <div class="col-12 col-lg-3 col-xl-3 pl-1 pr-1">
+                            <input class="form-control mygoinput" type="text" placeholder="請輸入姓名">
+                        </div>
+                        <div class="col-12 col-lg-5 col-xl-5 pl-1 pr-1">
+                            <input class="form-control mygoinput" type="text" placeholder="請輸入地址">
+                        </div>
+                        <div class="col-12 col-lg-4 col-xl-4 pl-1 pr-1" style="text-align: left;">
+                            <button type="submit" class="btn mb-2 mygobtn">與MyGo購房師聯繫</button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="slogan_md">
+                            專業顧問，解決國內、海外房屋疑難雜症
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slogan_list">
+            <ul>
+                <li>
+                    <img src="assets/img/index/icon_1.png"><span>嚴格管理真實房源</span>
+                </li>
+                <li>
+                    <img src="assets/img/index/icon_2.png"><span>1對1顧問，售房師/購房師服務</span>
+                </li>
+                <li>
+                    <img src="assets/img/index/icon_3.png"><span>買租售1站服務</span>
+                </li>
+                <li>
+                    <img src="assets/img/index/icon_4.png"><span>國內外房產委託</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="container-fluid container-fluid-mygo30">
+        <div class="features_box">
+            <div class="box_title">
+                MyGo特色
+            </div>
+            <div class="row">
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <div class="row point">
+                        <div class="col-4 col-md-12 col-lg-12 col-xl-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_5.png">
+                            </div>
+                        </div>
+
+                        <div class="col-8 col-md-12 col-lg-12 col-xl-12">
+                            <p>MyGo購房師/售房師<br />客製完美買賣經驗</p>
+                        </div>
+                    </div>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <div class="row point">
+                        <div class="col-4 col-md-12 col-lg-12 col-xl-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_6.png">
+                            </div>
+                        </div>
+
+                        <div class="col-8 col-md-12 col-lg-12 col-xl-12">
+                            <p>MyGo直購/直售<br />急售/急購在線快速成交</p>
+                        </div>
+                    </div>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <div class="row point">
+                        <div class="col-4 col-md-12 col-lg-12 col-xl-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_7.png">
+                            </div>
+                        </div>
+
+                        <div class="col-8 col-md-12 col-lg-12 col-xl-12">
+                            <p>單一案件刊登不重複<br />全平台經紀聯賣成交快</p>
+                        </div>
+                    </div>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+                    <div class="row point">
+                        <div class="col-4 col-md-12 col-lg-12 col-xl-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_8.png">
+                            </div>
+                        </div>
+
+                        <div class="col-8 col-md-12 col-lg-12 col-xl-12">
+                            <p>免費謄本查詢防盜賣<br />專利房產交易存證防糾紛</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="business_box">
+            <div class="box_title">
+                我在MyGo找到商機
+            </div>
+            <div class="row">
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <a href="#">
+                        <div class="row point">
+                            <div class="col-12">
+                                <div class="icon">
+                                    <img src="assets/img/index/icon_9.png">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>危老重建<span>老屋拉皮</span></p>
+                            </div>
+                            <div class="col-12">
+                                <dl>
+                                    <dd>
+                                        合建、委建、買斷⋯多元合作方案加速整合，一條龍供應鏈服務：設計、營建、銷售、管理。增值放大器，歡迎諮詢。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <a href="#">
+                        <div class="row point">
+                            <div class="col-12">
+                                <div class="icon">
+                                    <img src="assets/img/index/icon_10.png">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>售屋償債<span>財務重整</span></p>
+                            </div>
+                            <div class="col-12">
+                                <dl>
+                                    <dd>
+                                        一胎、二胎房貸代清償，案件線上評估，快速回報價格。財務紓困：繼承、貸款額度、企業經營需要資金，專業重整貸款及信用。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <a href="#">
+                        <div class="row point">
+                            <div class="col-12">
+                                <div class="icon">
+                                    <img src="assets/img/index/icon_11.png">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>海外房產買賣<span>海外房產救助</span></p>
+                            </div>
+                            <div class="col-12">
+                                <dl>
+                                    <dd>
+                                        海外地產委託出售、專業管理，多年跨境交易經歷、全程交易存證、律師見證。海外資產買賣糾紛、訴訟專業諮詢。海外房產專家。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-6 col-lg-6 col-xl-3">
+                    <a href="#">
+                        <div class="row point">
+                            <div class="col-12">
+                                <div class="icon">
+                                    <img src="assets/img/index/icon_12.png">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p>全台重劃區土地買賣<br />特殊地目、註記土地買賣</p>
+                            </div>
+                            <div class="col-12">
+                                <dl>
+                                    <dd>
+                                        早期重劃區土地買賣、地主整合，配地興建。特殊地目、註記土地買賣，搜尋未繼承土地代辦繼承，全程信託交易。土地專家。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="assist_box">
+            <div class="box_title">
+                MyGo售房師在這兒協助您賣房
+                <dl>
+                    <dd>您的安全感與信任感至關重要</dd>
+                    <dd>無論您要現在出售或刊登案件，我們將一步步<span>引導您</span></dd>
+                </dl>
+            </div>
+            
+            <div class="row">
+                <!--項目-->
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="row point">
+                        <div class="col-4 col-md-12 col-lg-12 col-xl-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_13.png">
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-12 col-lg-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>獲得MyGo報價</p>
+                                </div>
+                                <div class="col-12">
+                                    <dl>
+                                        <dd>
+                                            您可以自由決定是否將您的房賣給MyGo，或者讓MyGo售房師助您刊登賣房。
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="row point">
+                        <div class="col-4 col-md-12 col-lg-12 col-xl-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_14.png">
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-12 col-lg-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>自由選擇賣屋方案</p>
+                                </div>
+                                <div class="col-12">
+                                    <dl>
+                                        <dd>
+                                            如果您賣房給MyGo，您可避免案件在市場曝光，並可以在MyGo平台上完成交易，全程交易存證，保障交易安全。
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="row point">
+                        <div class="col-4 col-md-12 col-lg-12 col-xl-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_15.png">
+                            </div>
+                        </div>
+                        <div class="col-8 col-md-12 col-lg-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>安全交易</p>
+                                </div>
+                                <div class="col-12">
+                                    <dl>
+                                        <dd>
+                                            跳過不必要的麻煩與猜測，直接提案報價，省時省力，有意願交易，立刻推進。
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="program_box">
+            <div class="box_title">
+                賣房好簡單，方案二選一
+                <dl>
+                    <dd>選擇一個適合您的方案，享受無壓力賣房</dd>
+                </dl>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-6">
+                    <div class="row point">
+                        <div class="point_tit">
+                            <p><span class="point_tit_new">賣給MyGo</span></p>
+                            <dl>
+                                <dd>
+                                    我們將為您提供有競爭力的開價，使您不用刊登，無壓力賣房。
+                                </dd>
+                            </dl>
+                        </div>
+                        <hr/>
+                        <ul>
+                            <li>
+                                <p>獲得即時報價並取得交易時間表</p>
+                                <dl>
+                                    <dd>
+                                        直接賣給MyGo，短時間內獲得付款，您即擁有資金購買下一間。
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>避免繁複的看房和維修</p>
+                                <dl>
+                                    <dd>
+                                        提供一個基礎模擬評估，簡易看房或跳過看房即可。如果後續有維修可交付MyGo。
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>方便掌握交易時間表</p>
+                                <dl>
+                                    <dd>
+                                        售屋流程簡化，溝通、抵押、清償時間依序排好，避免時間浪費，避免流程混亂。
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-6">
+                    <div class="row point">
+                        <div class="point_tit">
+                            <p>在MyGo刊登賣房</p>
+                            <dl>
+                                <dd>
+                                    我們將協助您在MyGo上刊登賣房，極大化成交價格，獲利最大化。
+                                </dd>
+                            </dl>
+                        </div>
+                        <hr/>
+                        <ul>
+                            <li>
+                                <p>最大化您的成交價格</p>
+                                <dl>
+                                    <dd>
+                                        以最高的價格出售您的房屋，MyGo提供裝修借款，賣房預付借貸，進行裝修，吸引更多優質買方。
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>您的開支，全平台通路聯賣</p>
+                                <dl>
+                                    <dd>
+                                        MyGo售房師組織買家購房，或組織最優秀、高評價的經紀售房團隊，節省開支，節省時間。
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <p>方便掌握交易時間表</p>
+                                <dl>
+                                    <dd>
+                                        售屋流程簡化，溝通、抵押、清償時間依序排好，避免時間浪費，避免流程混亂。
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step_box">
+            <div class="box_title">
+                如何開始賣房？
+            </div>
+            
+            <div class="row">
+                <!--項目-->
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="row point">
+                        <div class="col-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_step1.png">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p>第一步</p>
+                        </div>
+                        <div class="col-12">
+                            <dl>
+                                <dd>
+                                    告訴我們您的房屋，獲取您的估計價
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="row point">
+                        <div class="col-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_step2.png">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p>第二步</p>
+                        </div>
+                        <div class="col-12">
+                            <dl>
+                                <dd>
+                                    視頻直播、簡易看房以確認報價
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--項目-->
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="row point">
+                        <div class="col-12">
+                            <div class="icon">
+                                <img src="assets/img/index/icon_step3.png">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p>第三步</p>
+                        </div>
+                        <div class="col-12">
+                            <dl>
+                                <dd>
+                                    選擇您合適的方案
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact_box">
+            <div class="box_title text-white">
+                請隨時與MyGo連絡
+            </div>
+            <div class="row phone">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div><p>我要賣房 ‧ 請MyGo售房師提供估價</p></div>
+                    <div class="phone_number">02-2738-3123</div>
+                    <div class="phone_btn">
+                        <button type="submit" class="btn mb-2 mygobtn">聯繫MyGo售房師</button>
+                    </div>                    
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                    <div><p>我要買房 ‧ 請MyGo購房師提供房價</p></div>
+                    <div class="phone_number">02-2738-3123</div>
+                    <div class="phone_btn">
+                        <button type="submit" class="btn mb-2 mygobtn">聯繫MyGo購房師</button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!----end------->
+    <!-- footer -->
+    <div class="my-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-12">
+                    <img class="footer-logo" src="./assets/img/mygo-logo.png">
+                    
+                        <div class="row">
+                            <div class="col-md-12 social-icon">
+                                <a href="#"><i class="fab fa-line fa-2x"></i></a>
+                                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            </div>
+                            
+                        </div>
+                  
+                    <p class=".fs-13 footer-2">© 2020 MyGo.com </p>
+                </div>
+                <div class="col-md-10 col-12">
+                    <div class="row footer-1">
+                        <div class="col-md-3 col-6">
+                            <p class="fs-16 footer-title">關於我們</p>
+                            <hr>
+                            <p class="fs-14 footer-world"><a href="./about.html">關於我們</a></p>
+                            <p class="fs-14 footer-world"><a href="https://www.104.com.tw/company/1a2x6bkcyc?jobsource=n104bank1" target="_blank">MyGo徵才</a></p>
+                            <p class="fs-14 footer-world"><a href="./service.html">服務條款</a></p>
+                            <p class="fs-14 footer-world"><a href="./publish.html">物件刊登規範</a></p>
+                            <p class="fs-14 footer-world"><a href="./privacy.html">隱私權聲明</a></p>
+                            <p class="fs-14 footer-world"><a href="./wisdom.html">智慧財產權聲明</a></p>
+                            <p class="fs-14 footer-world"><a href="./disclaimer.html">免責聲明</a></p>
+                            <p class="fs-14 footer-world"><a href="./advertising.html">廣告刊登</a></p>
+                            <p class="fs-14 footer-world"><a href="./question.html">問題與意見</a> </p>
+                            <p class="fs-14 footer-world"><a href="./cooperation.html">合作提案</a></p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <p class="fs-16 footer-title">買屋</p>
+                            <hr>
+                            <p class="fs-14 footer-world"><a href="#">台北市買屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">新北市買屋</a> </p>
+                            <p class="fs-14 footer-world"><a href="#">桃園市買屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">新竹市買屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">台中市買屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">高雄市買屋</a></p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <p class="fs-16 footer-title">租屋</p>
+                            <hr>
+                            <p class="fs-14 footer-world"><a href="#">台北市租屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">新北市租屋</a> </p>
+                            <p class="fs-14 footer-world"><a href="#">桃園市租屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">新竹市租屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">台中市租屋</a></p>
+                            <p class="fs-14 footer-world"><a href="#">高雄市租屋</a></p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <p class="fs-16 footer-title">海外地產</p>
+                            <hr>
+                            <p class="fs-14 footer-world"><a href="#">馬來西亞房地產</a></p>
+                            <p class="fs-14 footer-world"><a href="#">泰國房地產</a> </p>
+                            <p class="fs-14 footer-world"><a href="#">日本房地產</a></p>
+                            <p class="fs-14 footer-world"><a href="#">杜拜房地產</a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="footer-company">
+        <p class="fs-13">T:+886-2-27383123 F:+886-2-25082278 myservice@mygo.com   </p>
+    </div>
+
+
+     <!--   Core JS Files   -->
+     <script src="assets/js/core/jquery.3.2.1.min.js"></script>
+     <script src="assets/js/core/popper.min.js"></script>
+     <script src="assets/js/core/bootstrap.min.js"></script>
+     <!-- jQuery UI -->
+     <script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+     <script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+     <!-- jQuery Scrollbar -->
+     <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+     <!-- Moment JS -->
+     <script src="assets/js/plugin/moment/moment.min.js"></script>
+     <!-- Chart JS -->
+     <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+     <!-- jQuery Sparkline -->
+     <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+     <!-- Datatables -->
+     <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+     <!-- Bootstrap Notify -->
+     <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+     <!-- Bootstrap Toggle -->
+     <script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+     <!-- jQuery Vector Maps -->
+     <script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+     <script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+     <!-- Sweet Alert -->
+     <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+     <!-- Azzara JS -->
+     <script src="assets/js/ready.min.js"></script>
+     <!-- Collapse Js -->
+     <!-- Roger 新加 -->
+     <script src="assets/js/collapse.js"></script>
+     <!-- Datepicker Js -->
+     <!-- Roger 新加 -->
+     <script src="assets/js/datepicker.js"></script>
+    <!-- willie 新加 -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
